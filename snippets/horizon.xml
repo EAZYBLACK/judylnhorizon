@@ -90,7 +90,6 @@
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
-  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="HorizonDroidLab" />
   
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
