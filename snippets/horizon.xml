@@ -19,17 +19,16 @@
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk" remote="HorizonDroidLab">
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
   </project>
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="HorizonDroidLab">
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- Device -->
@@ -89,16 +88,13 @@
   <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="HorizonDroidLab" revision="14-caf-sm6225" />
 
   <!-- Packages -->
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="HorizonDroidLab" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="HorizonDroidLab" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="HorizonDroidLab" />
   
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" />
-  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Vendor -->
   <project path="vendor/horizon" name="vendor_horizon" remote="HorizonDroidLab" />
