@@ -13,6 +13,10 @@
            fetch="https://github.com/HorizonDroid-Devices"
            revision="refs/heads/14" />
 
+  <remote  name="EAZYBLACK"
+           fetch="https://github.com/EAZYBLACK/hd_frameworks_base"
+           revision="refs/heads/14" />
+    
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="HorizonDroidLab" />
   <project path="manifest" name="manifest" remote="HorizonDroidLab" />
@@ -52,7 +56,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="HorizonDroidLab" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroidLab" />
+  <project path="frameworks/base" name="hd_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="EAZYBLACK" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="HorizonDroidLab" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="HorizonDroidLab" />
 
