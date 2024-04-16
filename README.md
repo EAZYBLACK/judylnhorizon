@@ -1,4 +1,4 @@
-# HorizonDroid
+# HorizonDroid for LGE SDM845
 
 ![HorizonDroid](https://github.com/HorizonDroidLab/.github/blob/main/New%20Project%20%5BEB204AC%5D.png)
 
@@ -40,7 +40,7 @@ Due to their size, some repos are configured for lfs or Large File Storage. To m
 To initialize your local repository, use this command:
 -----------------------------------------------------
 
-    repo init -u https://github.com/HorizonDroidLab/manifest.git -b 14 --git-lfs
+    repo init -u https://github.com/EAZYBLACK/judylnhorizon.git -b 14 --git-lfs --depth=1
 
 To sync the repository, use this command:
 -----------------------------------------
